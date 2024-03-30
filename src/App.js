@@ -7,12 +7,18 @@ import Chart from './components/chart/Chart';
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      {/* <Header />
-      <Chart />
-      <Crypto />
+    <div className="App flex_1">
+      <div className="left">
+        <Sidebar />
+      </div>
+
+      <div className="right">
+        <Header />
+        <Chart />
+        <Crypto />
+        {/* 
       <Wallet /> */}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.btn {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 8px;
+  background: #2ab42a;
+  padding: 1rem;
+  color: #fff;
+}
+
+.text-field {
+  color: #ffff;
+  font: 400;
+}

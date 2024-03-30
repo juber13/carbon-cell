@@ -1,0 +1,15 @@
+.currency-card {
+  display: flex;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  padding: 1rem;
+  background: #1a1e1c;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
