@@ -18,7 +18,7 @@ import logo from './Screenshot 2024-03-30 142944.png'
 
 
 
-const Sidebar = () => {
+const Sidebar = ({showSideBar , setShowSideBar}) => {
 
       const [isSidebarActive , setIsSideBar] = useState(true)
 
@@ -72,11 +72,11 @@ const Sidebar = () => {
     }
 
     return (
-        <div className={isSidebarActive ? "sidebar-container" : " sidebar-container sidebar_active"}>
+        <div className={showSideBar ? "sidebar-container transform_active" : "sidebar-container"} >
             <span className='highlight flex' ref={element}></span>
             <div className="header flex ">
                 <img src={logo} alt="logo" className='logo' />
-                <MdOutlineKeyboardArrowLeft className='icon left-arrow' onClick={() => setIsSideBar(!isSidebarActive)} />
+                <MdOutlineKeyboardArrowLeft className='icon left-arrow' onClick={() => setShowSideBar(false)} />
             </div>
 
             <div className='searchbar  align-item'>

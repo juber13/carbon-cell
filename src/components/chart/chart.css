@@ -1,0 +1,16 @@
+.chart-container {
+  width: 90%;
+  max-width: 735px;
+  height: 400px;
+  color: #fff;
+  background: #1a1e1c;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px";
+}
+
+.chart {
+  padding: 1rem;
+  /* width: 100%; */
+  /* max-width: 500px; */
+}

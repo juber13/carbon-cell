@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { MdContactSupport } from "react-icons/md";
+import { VscGraphLine } from "react-icons/vsc";
+
+
 
 import './crypto.css'
 
@@ -21,10 +25,23 @@ const Crypto = () => {
         const currency = data[currencyCode];
         return (
             <div key={currency.code} className="card">
-                <p style={{ color: "#fff" }}>{currency.code} <span dangerouslySetInnerHTML={{ __html: currency.symbol }}></span></p>
-                <small>{currency.description}</small>
-                <p>{currency.rate}</p>
-                <p>{currency.rate_float}</p>
+                <div className="cyrypto_heading flex">
+                    <p style={{ color: "#fff", fontWeight: "bold" }}>{currency.code} </p>
+                    <h2 className='currency-icon' dangerouslySetInnerHTML={{ __html: currency.symbol }}></h2>
+                </div>
+                <div className='description'>
+                    <h3>{currency.description}</h3>
+                </div>
+
+                <div className='rate flex'>
+                    <p>{currency.rate}</p>
+                    <VscGraphLine className='icon' />
+                </div>
+                <div className='trade flex'>
+                    <MdContactSupport className='icon' />
+                    <button className='btn'>Trade</button>
+
+                </div>
             </div>
         );
     });

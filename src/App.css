@@ -6,8 +6,10 @@ body {
   background: #0b0b0b;
 }
 
-.right {
-  width: 100%;
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 ul {
@@ -20,6 +22,9 @@ a {
   text-decoration: none;
 }
 
+.transform_active {
+  transform: translateX(0) !important;
+}
 h1,
 h2,
 h3,
@@ -33,7 +38,7 @@ p {
 
 .flex_1 {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .flex {
@@ -41,4 +46,67 @@ p {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.right {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  background: #000;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 1540px) {
+  .right {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background: red; */
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .right {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    /* background: green; */
+  }
+}
+
+/* @media screen and (max-width: 1250px) {
+  .right {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: pink;
+  }
+} */
+
+@media screen and (max-width: 900px) {
+  .right {
+    width: 100%;
+  }
+
+  .right-container {
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+  .user {
+    display: block;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-container {
+    transform: translateX(-500px);
+  }
 }
