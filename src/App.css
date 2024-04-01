@@ -48,65 +48,31 @@ p {
   gap: 10px;
 }
 
+.App {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+}
+
 .right {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: start;
   position: relative;
-  background: #000;
-  border: 1px solid #ddd;
 }
 
-@media screen and (max-width: 1540px) {
+
+@media screen and (max-width: 722px) {
+  .App {
+    display: grid;
+    /* grid-template-columns: auto; */
+  }
+
   .right {
-    /* width: 80%; */
-    /* margin: 0 auto; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* background: red; */
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .right {
-    width: 80%;
-    display: flex;
-    justify-content: end;
-    /* background: green; */
-  }
-}
-
-/* @media screen and (max-width: 1250px) {
-  .right {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    background: pink;
-  }
-} */
-
-@media screen and (max-width: 900px) {
-  .right {
-    width: 100%;
-  }
-
-  .right-container {
-    width: 90%;
-    padding-left: 2rem;
-  }
-
-  .user {
-    display: block;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    grid-column: 1/4;
+    padding-left: 1rem;
+    position: relative;
   }
 
   .sidebar-container {
     transform: translateX(-500px);
+    position: fixed;
   }
 }

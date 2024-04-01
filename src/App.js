@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Sidebar showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
-      <>
         <div className="right">
           <div className="right-container">
             <Header setShowSideBar={setShowSideBar} showSideBar={showSideBar} />
@@ -21,7 +20,6 @@ function App() {
           {/* 
       <Wallet /> */}
         </div>
-      </>
     </div>
   );
 }
