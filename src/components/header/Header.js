@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 
 
-const Header = ({ setShowSideBar, showSideBar }) => {
+const Header = ({ setShowSideBar, showSideBar, setChartValue, charts }) => {
     return (
         <div className='heading container'>
             <div className='user'>
@@ -19,6 +19,9 @@ const Header = ({ setShowSideBar, showSideBar }) => {
             <div className="text-field gap">
                 <h1>Hello , <span style={{ color: "tomato" }}>Brooklyn Simmons</span> 👋</h1>
                 <h2>Welcome to <span style={{ color: "#2ab42a" }}>Spot Trading !</span></h2>
+                <select onChange={(e) => setChartValue(e.target.value)}>
+                    {charts.map(chart => <option value={chart}>{chart}</option>)}
+                </select>
             </div>
             <div className="btn-filed">
                 <button className='btn start-trading-btn'> Start Trading</button>

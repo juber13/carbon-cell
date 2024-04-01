@@ -1,5 +1,4 @@
 .sidebar-container {
-  /* position: fixed; */
   width: 250px;
   height: 100vh;
   background-color: #1a1e1c;
@@ -8,13 +7,15 @@
   padding: 0 0.5rem 0 0.5rem;
   z-index: 999;
   transition: transform 0.4s ease;
+  position: fixed;
+  left: 0;
 }
 
 .highlight {
   transition: all 0.3s ease;
   position: absolute;
   left: -18px;
-  top: 0;
+  top: -10px;
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -104,7 +105,7 @@
   border-radius: 10px;
 }
 
-img {
+.user-profile img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -114,12 +115,6 @@ img {
   font-size: 10px;
 }
 
-/* li:first-child */
-
 .active {
   color: #227023 !important;
-}
-
-.left_active {
-  transform: translateX(0px);
 }

@@ -8,18 +8,18 @@ import { useState } from 'react';
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false);
+  const [charts] = useState(["Pie", "Line", "Bar"]);
+  const [chartValue, setChartValue] = useState('Pie');
   return (
     <div className="App">
       <Sidebar showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
-        <div className="right">
-          <div className="right-container">
-            <Header setShowSideBar={setShowSideBar} showSideBar={showSideBar} />
-            <Chart />
-            <Crypto />
-          </div>
-          {/* 
+      <div className="right">
+        <Header setShowSideBar={setShowSideBar} showSideBar={showSideBar} charts={charts} setChartValue={setChartValue} />
+        <Chart chartValue={chartValue} />
+        <Crypto />
+        {/* 
       <Wallet /> */}
-        </div>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { LuArrowDownUp } from "react-icons/lu";
 import { RiFileHistoryLine } from "react-icons/ri";
 import { BiWallet } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { MdContactSupport , MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { MdContactSupport, MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -18,9 +18,8 @@ import logo from './Screenshot 2024-03-30 142944.png'
 
 
 
-const Sidebar = ({showSideBar , setShowSideBar}) => {
+const Sidebar = ({ showSideBar, setShowSideBar }) => {
 
-      const [isSidebarActive , setIsSideBar] = useState(true)
 
     //  list menu one
     const [listMenuOne] = useState([
@@ -51,7 +50,7 @@ const Sidebar = ({showSideBar , setShowSideBar}) => {
             const coords = {
                 width: Math.floor(linkCoods.width),
                 height: Math.floor(linkCoods.height),
-                top: Math.floor(linkCoods.top - 10),
+                top: Math.floor(linkCoods.top),
                 left: Math.floor(linkCoods.left)
             };
             element.current.style.width = `${coords.width}px`;
@@ -115,7 +114,7 @@ const Sidebar = ({showSideBar , setShowSideBar}) => {
                 </div>
             </div>
 
-        </div >
+        </div>
     )
 }
 

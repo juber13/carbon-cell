@@ -1,16 +1,47 @@
 .chart-container {
   width: 95%;
-  max-width: 735px;
   height: 400px;
   color: #fff;
-  background: #1a1e1c;
   border-radius: 8px;
   margin-top: 20px;
   box-shadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .chart {
+  background: #1a1e1c;
+  max-width: 735px;
+  /* height: 300px; */
   padding: 1rem;
-  /* width: 100%; */
-  /* max-width: 500px; */
+}
+
+.reviews {
+  height: auto;
+  background: #1a1e1c;
+  padding: 1rem;
+}
+
+.reviews .heading {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.review-list p {
+  color: #dddddd;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  background: #000;
+  padding: 0.2rem;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1500px) {
+  .chart-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
