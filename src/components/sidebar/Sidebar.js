@@ -105,8 +105,8 @@ const Sidebar = ({ showSideBar, setShowSideBar }) => {
                     <div className='user-image'>
                         <img src={userAvtar} alt="user-avatar" /></div>
                     <div className='user-info'>
-                        <h5>Brooklyn Simmons</h5>
-                        <small className='email'>brooklyn@simmons.com</small>
+                        <h5>Juber</h5>
+                        <small className='email'>juberk1010@gmail.com</small>
                     </div>
                     <div className="dot-btn">
                         <BsThreeDotsVertical className='icon threedot' />

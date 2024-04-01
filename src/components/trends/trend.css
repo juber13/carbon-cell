@@ -1,0 +1,38 @@
+.trend-container {
+  margin-top: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.trends-card-container {
+  width: 100%;
+  max-width: 1230px;
+  display: grid;
+  grid-template-columns: repeat(5, 6fr);
+  align-items: center;
+  overflow-x: scroll;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.trends-card-container .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 1rem;
+  background: #1a1e1c;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 390px) {
+  .trends-card-container {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.2rem;
+  }
+
+  .trends-card-container .card {
+    width: 250px;
+    height: 200px;
+  }
+}
